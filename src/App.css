@@ -1,38 +1,158 @@
+@import url('//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.521/neodgm/style.css');
+
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+	height: 91px;
+	width: 251px;
+	background-image: url('./assets/header-logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 88%;
+  cursor: pointer;
+}
+
+#twitter-menu {
+	font-family: 'simple-line-icons';
+	content: "'a'";
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+.ant-layout-header {
+	z-index: 1000;
+	height: 92px !important;
+	background-color: #211f33 !important;
+	line-height: 92px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+	font-family: Gilroy;
+	src: url('./assets/Gilroy-Bold.ttf');
+}
+
+@font-face {
+	font-family: SeoulNamsanJungM;
+	src: url('./assets/08SeoulNamsanM_0.ttf');
+}
+.ant-menu-horizontal > .ant-menu-item {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Gilroy, SeoulNamsanJungM;
+}
+
+.vote-items {
+	margin: 0 auto;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+	color: #24d164 !important;
+	border-bottom: none !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item::after, .ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+	border-bottom: none !important;
+}
+
+.ant-menu {
+	border-bottom: none !important;
+	color: white;
+	background-color: #211f33 !important;
+}
+
+.site-layout-content {
+	min-height: 280px;
+	padding: 24px;
+	background: #fff;
+}
+#components-layout-demo-top .logo {
+	float: left;
+	width: 120px;
+	height: 31px;
+	margin: 16px 24px 16px 0;
+	background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+	float: right;
+	margin: 16px 0 16px 24px;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
+}
+.welcome-body {
+	background-color: rgba(60, 55, 86, 0.75);
+}
+.visual-link {
+	display: block;
+	width: 100%;
+	height: calc(100vh - 92px);
+	position: absolute;
+	top: 92px;
+	left: 0;
+	background: rgba(60, 55, 86, 0.75);
+}
+.header-content {
+	font-family: Gilroy;
+	background-image: url('./assets/header-image.gif');
+	height: calc(100vh - 92px);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+}
+.header-content-text {
+	text-align: center;
+	margin: auto 0;
+	font-size: 22px;
+	color: white;
+	z-index: 100;
+	line-height: 23px;
+	font-family: SeoulNamsanJungM;
+}
+.ant-btn {
+	background-color: #211f33 !important;
+	color: #ffffff !important;
+	border: 1px solid #211f33 !important;
+	margin: 105px auto 0 auto !important;
+	display: inline-block !important;
+	font-size: 48px !important;
+	width: 380px;
+	height: 90px !important;
+}
+.body {
+	background-color: #211f33;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
