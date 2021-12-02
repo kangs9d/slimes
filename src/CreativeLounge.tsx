@@ -38,101 +38,100 @@ const CreativeLounge = () => {
 						<h2 style={{ fontSize: '26px', fontWeight: 'bold', marginTop: '20px', color: 'white' }}>
 							실시간 인기 투표 진행중인 작품들 보러가기
 						</h2>
-						
 					</div>
 				</Col>
 				<Col span={3}></Col>
 			</Row>
-			<Carousel autoplay easing="Receding">
-							<div>
-								<div style={{ display: 'flex' }}>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>{' '}
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div style={{ display: 'flex' }}>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-									<div className="vote-items">
-										<a>
-											<img src="kingslime.jpeg" width="149" height="149"></img>
-										</a>
-									</div>
-								</div>
-							</div>
-						</Carousel>
+			<Carousel autoplay style={{ marginBottom: '30px' }}>
+				<div>
+					<div style={{ display: 'flex' }}>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>{' '}
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div style={{ display: 'flex' }}>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+						<div className="vote-items">
+							<a>
+								<img src="kingslime.jpeg" width="149" height="149"></img>
+							</a>
+						</div>
+					</div>
+				</div>
+			</Carousel>
 		</>
 	)
 }

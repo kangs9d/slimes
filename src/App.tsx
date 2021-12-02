@@ -6,6 +6,7 @@ import Welcome from './welcome'
 import CreativeLounge from './CreativeLounge'
 import Roadmap from './roadmap'
 import Team from './team'
+import CustomFooter from './footer'
 
 const App = () => {
 	return (
@@ -16,7 +17,7 @@ const App = () => {
 			<Roadmap></Roadmap>
 			<Team></Team>
 			<CreativeLounge></CreativeLounge>
-			
+			<CustomFooter></CustomFooter>
 		</div>
 		</>
 	)

@@ -134,7 +134,7 @@
 	line-height: 23px;
 	font-family: SeoulNamsanJungM;
 }
-.ant-btn {
+.header-content div div .ant-btn {
 	background-color: #211f33 !important;
 	color: #ffffff !important;
 	border: 1px solid #211f33 !important;
