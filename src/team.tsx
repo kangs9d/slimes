@@ -8,23 +8,23 @@ import CustomDivider from './divider'
 const Team = () => {
 	return (
 		<>
-			<Row>
+			<Row style={{ backgroundColor: '#120338'}}>
 				<Col span={3}></Col>
 				<Col span={18}>
-					<div className="body">
+					<div className="body section" style={{ backgroundColor: '#120338'}}>
 						<CustomDivider></CustomDivider>
-						<h2 style={{ margin: '30px', fontSize: '26px', fontFamily: 'Gilroy', color: 'white', textAlign: 'center' }}>
+						<h2 style={{ margin: '30px', fontSize: '26px', fontFamily: 'NeoDunggeunmo', color: 'white', textAlign: 'center' }}>
 							Team
 						</h2>
 						<CustomDivider></CustomDivider>
 						<Row>
 							<Col span={6}>
 								<div style={{ margin: '50px 10px' }}>
-									<img src="./kingslime.jpeg" width="300" height="300"></img>
+									<img src="./kingslime.jpeg" style={{width:"100%"}}></img>
 								</div>
 							</Col>
 							<Col span={12} style={{ color: 'white' }}>
-								<div style={{ margin: '50px 10px', fontFamily: 'SeoulNamsanJungM', textAlign: 'center' }}>
+								<div style={{ margin: '50px 10px', fontFamily: 'NeoDunggeunmo', textAlign: 'center' }}>
 									<h2 style={{ color: 'white', fontWeight: 'bold', fontSize: '26px' }}>슬라임 세상의 무자비한 폭군, 킹슬라임</h2>
 									<p style={{ fontSize: '16px' }}>
 									모든 건 다 내 뜻대로 해야 직성이 풀리는 <br />
@@ -40,18 +40,18 @@ const Team = () => {
 							</Col>
 							<Col span={6}>
 								<div style={{ margin: '50px 10px' }}>
-									<img src="./kingslime.jpeg" width="300" height="300"></img>
+									<img src="./kingslime.jpeg" style={{width:"100%"}}></img>
 								</div>
 							</Col>
 						</Row>
 						<Row>
 							<Col span={6}>
 								<div style={{ margin: '50px 10px' }}>
-									<img src="./bossslime.jpeg" width="300" height="300"></img>
+									<img src="./bossslime.jpeg" style={{width:"100%"}}></img>
 								</div>
 							</Col>
 							<Col span={12} style={{ color: 'white' }}>
-								<div style={{ margin: '50px 10px', fontFamily: 'SeoulNamsanJungM', textAlign: 'center' }}>
+								<div style={{ margin: '50px 10px', fontFamily: 'NeoDunggeunmo', textAlign: 'center' }}>
 									<h2 style={{ color: 'white', fontWeight: 'bold', fontSize: '26px' }}>슬라임 세상의 보스를 꿈꾸는, 보스 슬라임</h2>
 									<p style={{ fontSize: '16px' }}>
 									영화 [Her]와 [Ready Player One]을 보고 난 후부터<br />
@@ -67,18 +67,18 @@ const Team = () => {
 							</Col>
 							<Col span={6}>
 								<div style={{ margin: '50px 10px' }}>
-									<img src="./bossslime.jpeg" width="300" height="300"></img>
+									<img src="./bossslime.jpeg" style={{width:"100%"}}></img>
 								</div>
 							</Col>
 						</Row>
 						<Row>
 							<Col span={6}>
 								<div style={{ margin: '50px 10px' }}>
-									<img src="./slimegod.jpeg" width="300" height="300"></img>
+									<img src="./slimegod.jpeg" style={{width:"100%"}}></img>
 								</div>
 							</Col>
 							<Col span={12} style={{ color: 'white' }}>
-								<div style={{ margin: '50px 10px', fontFamily: 'SeoulNamsanJungM', textAlign: 'center' }}>
+								<div style={{ margin: '50px 10px', fontFamily: 'NeoDunggeunmo', textAlign: 'center' }}>
 									<h2 style={{ color: 'white', fontWeight: 'bold', fontSize: '26px' }}>온화한 미소 뒤 감춰둔 야망, 슬라임갓</h2>
 									<p style={{ fontSize: '16px' }}>
 									슬라임 프로젝트의 핵심 중의 핵심이다.<br />
@@ -94,7 +94,7 @@ const Team = () => {
 							</Col>
 							<Col span={6}>
 								<div style={{ margin: '50px 10px' }}>
-									<img src="./slimegod.jpeg" width="300" height="300"></img>
+									<img src="./slimegod.jpeg" style={{width:"100%"}}></img>
 								</div>
 							</Col>
 						</Row>

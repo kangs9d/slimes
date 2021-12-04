@@ -7,6 +7,7 @@ import CreativeLounge from './CreativeLounge'
 import Roadmap from './roadmap'
 import Team from './team'
 import CustomFooter from './footer'
+import ProjectRoadmap from './project-roadmap'
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 			<CustomHeader></CustomHeader>
 			<Welcome></Welcome>
 			<Roadmap></Roadmap>
+			<ProjectRoadmap></ProjectRoadmap>
 			<Team></Team>
 			<CreativeLounge></CreativeLounge>
 			<CustomFooter></CustomFooter>

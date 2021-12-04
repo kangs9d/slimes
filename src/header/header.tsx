@@ -8,13 +8,13 @@ const CustomHeader = () => {
 		window.location.href = 'https://twitter.com/brave_slimes'
 	}
 	return (
-		<Header className="header">
+		<Header className="header" style={{position: 'fixed', width: '100%'}}>
 			<Row>
 				<Col span={12}>
 					<div className="logo" onClick={() => (window.location.href = '/')}></div>
 				</Col>
 				<Col span={12}>
-					<Menu mode="horizontal" disabledOverflow={true} style={{ float: 'right' }}>
+					<Menu mode="horizontal" disabledOverflow={false} style={{ float: 'right' }}>
 						<Menu.Item key="1">Intro</Menu.Item>
 						<Menu.Item key="2">Roadmap</Menu.Item>
 						<Menu.Item key="3">Creative Lounge</Menu.Item>

@@ -7,7 +7,7 @@ const Welcome = () => {
 	return (
 		<>
 			<div className="welcome-body">
-				<a className="visual-link" href="#CreativeLounge"></a>
+				<div className="visual-link"></div>
 				<div className="header-content">
 					<div style={{ verticalAlign: 'middle', display: 'flex', margin: 'auto' }}>
 						<div style={{ display: 'grid' }}>

@@ -1,5 +1,6 @@
 @import url('//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.521/neodgm/style.css');
 
+
 .App {
 	text-align: center;
 }
@@ -11,7 +12,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 88%;
-  cursor: pointer;
+  	cursor: pointer;
 }
 
 #twitter-menu {
@@ -27,10 +28,13 @@
 .ant-layout-header {
 	z-index: 1000;
 	height: 92px !important;
-	background-color: #211f33 !important;
+	background-color: #120338 !important;
 	line-height: 92px !important;
 }
 
+.ant-menu {
+	z-index: 999;
+}
 @font-face {
 	font-family: Gilroy;
 	src: url('./assets/Gilroy-Bold.ttf');
@@ -82,7 +86,7 @@
 .ant-menu {
 	border-bottom: none !important;
 	color: white;
-	background-color: #211f33 !important;
+	background-color: #120338 !important;
 }
 
 .site-layout-content {
@@ -106,7 +110,8 @@
 	color: #61dafb;
 }
 .welcome-body {
-	background-color: rgba(60, 55, 86, 0.75);
+	background-color: rgba(57, 16, 133, 0.85);
+	padding-top: 92px;
 }
 .visual-link {
 	display: block;
@@ -115,7 +120,7 @@
 	position: absolute;
 	top: 92px;
 	left: 0;
-	background: rgba(60, 55, 86, 0.75);
+	background: rgba(57, 16, 133, 0.55);
 }
 .header-content {
 	font-family: Gilroy;
@@ -135,9 +140,9 @@
 	font-family: SeoulNamsanJungM;
 }
 .header-content div div .ant-btn {
-	background-color: #211f33 !important;
+	background-color: #391085 !important;
 	color: #ffffff !important;
-	border: 1px solid #211f33 !important;
+	border: 1px solid #391085 !important;
 	margin: 105px auto 0 auto !important;
 	display: inline-block !important;
 	font-size: 48px !important;
@@ -148,11 +153,29 @@
 	background-color: #211f33;
 }
 
+.section {
+	margin-top: 70px;
+}
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+@media only screen and (max-width:768px) {
+	.logo {
+		height: 44px;
+		width: 100px;
+	}
+
+	.ant-layout-header {
+		height: 44px!important;
+		padding: 0 22px!important;
+	}
+
+	.welcome-body {
+		padding-top: 44px!important;
 	}
 }

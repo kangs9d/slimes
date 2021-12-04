@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import 'antd/dist/antd.css'
 import CustomHeader from './header/header'
@@ -6,12 +6,47 @@ import { Carousel, Col, Divider, Row } from 'antd'
 import CustomDivider from './divider'
 
 const CreativeLounge = () => {
+	const instagramPosts = [
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_1.jpeg',
+		},
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_2.jpeg',
+		},
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_3.jpeg',
+		},
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_4.jpeg',
+		},
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_5.jpeg',
+		},
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_6.jpeg',
+		},
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_7.jpeg',
+		},
+		{
+			url: 'https://www.instagram.com/p/CWcwm8nFG6E',
+			image: '/carousel_8.jpeg',
+		},
+	]
+
 	return (
 		<>
 			<Row>
 				<Col span={3}></Col>
 				<Col span={18}>
-					<div className="body">
+					<div className="body section">
 						<CustomDivider></CustomDivider>
 						<h2 style={{ margin: '30px', fontSize: '26px', fontFamily: 'Gilroy', color: 'white', textAlign: 'center' }}>
 							Creative Lounge
@@ -45,90 +80,28 @@ const CreativeLounge = () => {
 			<Carousel autoplay style={{ marginBottom: '30px' }}>
 				<div>
 					<div style={{ display: 'flex' }}>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>{' '}
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
+						{instagramPosts.map((post) => {
+							return (
+								<div className="vote-items">
+									<a href={post.url}>
+										<img src={post.image} width="149" height="149"></img>
+									</a>
+								</div>
+							)
+						})}
 					</div>
 				</div>
 				<div>
 					<div style={{ display: 'flex' }}>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
-						<div className="vote-items">
-							<a>
-								<img src="kingslime.jpeg" width="149" height="149"></img>
-							</a>
-						</div>
+						{instagramPosts.map((post) => {
+							return (
+								<div className="vote-items">
+									<a href={post.url}>
+										<img src={post.image} width="149" height="149"></img>
+									</a>
+								</div>
+							)
+						})}
 					</div>
 				</div>
 			</Carousel>
